@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#set script to exist on error
+#set script to exit on error
 set -e
 
 masterBranch=develop
