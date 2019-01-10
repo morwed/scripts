@@ -6,9 +6,18 @@ brew tap caskroom/versions
 brew tap caskroom/cask
 brew tap homebrew/cask-drivers
 
-brew install git bash-completion
 
-brew cask install brave flux google-featured-photos jetbrains-toolbox meld slack spectacle flycut iterm2 kdiff3 visual-studio-code docker google-chrome java8 logitech-options postman sourcetree vlc
+brew install bash-completion coreutils git node@8 openshift-cli	openssl
+
+
+brew cask install jetbrains-toolbox spectacle flycut iterm2 visual-studio-code docker java8 postman sourcetree flux google-featured-photos logitech-options p4v rocket-chat
+
+
+#these come after we have installed java ;)
+brew install gradle maven
+
+git clone https://github.com/braver/fonts.git programming-fonts-for-atom
+curl https://fonts.google.com/download?family=IBM%20Plex%20Mono|Overpass%20Mono
 
 mkdir tools
 cd tools

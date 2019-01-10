@@ -44,19 +44,19 @@
 	amend = commit --amend --no-edit
 
 [core]
-	excludesfile = /Users/emoraru/.gitignore_global
+	excludesfile = /Users/moraru/.gitignore_global
 	editor = nano
 	trustctime = false
 	autocrlf = input
 
 [diff]
-	tool = kdiff3
+    tool = p4merge
 
 [difftool]
 	prompt = false
 
 [merge]
-	tool = kdiff3
+    tool = p4merge
 	conflictstyle = diff3
 
 [mergetool]
@@ -66,7 +66,7 @@
 	keepBackup = false
 
 [user]
-	email = edmoraru@deloittece.com
+	email = Edward_Gabriel.Moraru@lidl.ro
 	name = Edward Gabriel Moraru
 
 [color]
@@ -103,18 +103,5 @@
 [credential]
 	helper = osxkeychain
 
-[mergetool "kdiff3NoAuto"]
-	cmd = kdiff3 --qall --L1 \"$MERGED (Base)\" --L2 \"$MERGED (Local)\" --L3 \"$MERGED (Remote)\" -o \"$MERGED\" \"$BASE\" \"$LOCAL\" \"$REMOTE\"
-	# don't ask if we want to skip merge
-	prompt = false
-	# don't create backup *.orig files
-	keepBackup = false
-	
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
 [pull]
 	rebase = true
