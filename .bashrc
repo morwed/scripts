@@ -75,3 +75,11 @@ shopt -s histappend
 
 # After each command, append to the history file and reread it
 #export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+
+
+#enable iTerm shell integration
+if [ -e "${HOME}/tools/scripts/.iterm2_shell_integration.bash" ]; then
+  echo "enabled iTerm shell integration"
+  source "${HOME}/tools/scripts/.iterm2_shell_integration.bash"
+fi
+
