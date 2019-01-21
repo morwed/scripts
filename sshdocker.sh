@@ -1,5 +1,7 @@
 #!/bin/sh
 
-hash=$(docker ps | awk -v img=$1 '/img/ {print $1}')
-echo $hash
+set -xe
+
+hash=$(docker ps -q -f name=$1)
+echo "hash for '$1' is '$hash'"
 docker exec -i -t $hash /bin/sh

@@ -1,0 +1,23 @@
+Host tux3
+    HostName tux1643.int.secrz.com
+    User emoraru
+
+Host tux4
+    HostName tux1644.int.secrz.com
+    User emoraru
+
+Host tux5
+    HostName tux1645.int.secrz.com
+    User emoraru
+
+Host tux6
+    HostName tux1646.int.secrz.com
+    User emoraru
+
+Host tux7
+    HostName tux1647.int.secrz.com
+    User emoraru
+
+Host tux8
+    HostName tux1648.int.secrz.com
+    User emoraru

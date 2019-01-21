@@ -15,7 +15,7 @@ if [ $# -le 0 ]; then
 	exit 1
 else
 	branch=$1
-	echo "\nmerging changes from branch: $branch\n"
+	echo "\nmerging changes from branch: $branch into $masterBranch\n"
 fi
 
 #check if current path is valid git repo
