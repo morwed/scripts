@@ -34,3 +34,6 @@ ln -s ~/tools/scripts/ssh_config ~/.ssh/config
 
 #enable "allow from anywhere" option in System Preferences>Security&Privacy>"Allow apps downloaded from:"
 sudo spctl --master-disable
+#show hidden folders/files by default in Finder
+defaults write com.apple.Finder AppleShowAllFiles true
+killall Finder

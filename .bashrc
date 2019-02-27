@@ -64,6 +64,9 @@ else
 fi
 
 
+alias grd="./gradlew"
+
+
 # Maximum number of history lines in memory
 export HISTSIZE=50000
 # Maximum number of history lines on disk
