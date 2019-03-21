@@ -37,7 +37,7 @@
 	sl = stash list
 	sta = stash apply
 	sts = stash save
-	pa = pull --all --prune
+	pa = pull --all --prune --autostash
 	mrg = merge --no-ff --no-edit
 	rbs = rebase develop
 	godev = checkout develop
@@ -51,13 +51,13 @@
 	autocrlf = input
 
 [diff]
-    tool = p4merge
+	tool = p4merge
 
 [difftool]
 	prompt = false
 
 [merge]
-    tool = p4merge
+	tool = p4merge
 	conflictstyle = diff3
 
 [mergetool]
