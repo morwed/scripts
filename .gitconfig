@@ -51,13 +51,13 @@
 	autocrlf = input
 
 [diff]
-	tool = p4merge
+	tool = kdiff3
 
 [difftool]
 	prompt = false
 
 [merge]
-	tool = p4merge
+	tool = kdiff3
 	conflictstyle = diff3
 
 [mergetool]

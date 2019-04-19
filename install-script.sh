@@ -7,10 +7,10 @@ brew tap caskroom/cask
 brew tap homebrew/cask-drivers
 
 
-brew install bash-completion coreutils git node@8 openshift-cli	openssl docker-compose-completion maven-completion gradle-completion jhead docker-completion
+brew install bash-completion coreutils git nvm openshift-cli openssl docker-compose-completion maven-completion gradle-completion jhead docker-completion
+mkdir ~/.nvm
 
-
-brew cask install jetbrains-toolbox spectacle flycut iterm2 visual-studio-code docker java8 postman sourcetree flux google-featured-photos logitech-options p4v rocket-chat microsoft-teams plantronics-hub
+brew cask install docker flycut google-featured-photos iterm2 java8 jetbrains-toolbox logitech-options postman rocket-chat sourcetree spectacle visual-studio-code kdiff3 meld
 
 
 #these come after we have installed java ;)
