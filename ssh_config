@@ -1,23 +1,102 @@
-Host tux3
+Host tux43
     HostName tux1643.int.secrz.com
     User emoraru
 
-Host tux4
+Host tux44
     HostName tux1644.int.secrz.com
     User emoraru
 
-Host tux5
+Host tux45
     HostName tux1645.int.secrz.com
     User emoraru
 
-Host tux6
+Host tux46
     HostName tux1646.int.secrz.com
     User emoraru
 
-Host tux7
+Host tux47
     HostName tux1647.int.secrz.com
     User emoraru
 
-Host tux8
+Host tux48
     HostName tux1648.int.secrz.com
+    User emoraru
+
+Host tux55
+    HostName tux1655.int.secrz.com
+    User emoraru
+
+Host tux56
+    HostName tux1656.int.secrz.com
+    User emoraru
+
+Host tux57
+    HostName tux1657.int.secrz.com
+    User emoraru
+
+Host tux58
+    HostName tux1658.int.secrz.com
+    User emoraru
+
+Host tux63
+    HostName tux1663.int.secrz.com
+    User emoraru
+
+Host tux64
+    HostName tux1664.int.secrz.com
+    User emoraru
+
+Host tux65
+    HostName tux1665.int.secrz.com
+    User emoraru
+
+Host tux66
+    HostName tux1666.int.secrz.com
+    User emoraru
+
+Host tux67
+    HostName tux1667.int.secrz.com
+    User emoraru
+
+Host tux68
+    HostName tux1668.int.secrz.com
+    User emoraru
+
+Host tux69
+    HostName tux1669.int.secrz.com
+    User emoraru
+
+Host tux70
+    HostName tux1670.int.secrz.com
+    User emoraru
+
+Host tux71
+    HostName tux16671.int.secrz.com
+    User emoraru
+
+Host tux72
+    HostName tux1672.int.secrz.com
+    User emoraru
+
+Host tux73
+    HostName tux1673.int.secrz.com
+    User emoraru
+
+Host tux74
+    HostName tux1674.int.secrz.com
+    User emoraru
+
+Host tux75
+    HostName tux1675.int.secrz.com
+    User emoraru
+
+Host tux78
+    HostName tux1678.int.secrz.com
+    User emoraru
+
+Host tux79
+    HostName tux1679.int.secrz.com
+    User emoraru
+
+Host *
     User emoraru

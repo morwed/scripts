@@ -30,6 +30,7 @@ ln -s ~/tools/scripts/.gitconfig ~/.gitconfig
 ln -s ~/tools/scripts/.bashrc ~/.bashrc
 ln -s ~/.bashrc ~/.bash_profile
 ln -s ~/tools/scripts/ssh_config ~/.ssh/config
+ln -s ~/git ~/tools/scripts/git
 
 
 #enable "allow from anywhere" option in System Preferences>Security&Privacy>"Allow apps downloaded from:"

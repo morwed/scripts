@@ -43,12 +43,14 @@
 	godev = checkout develop
 	fa = fetch --all --prune -v
 	amend = commit --amend --no-edit
+	rmb = "!f() { git branch --merged | grep -v "develop" | while read i; do git branch -d $i; done; }; f"
 
 [core]
 	excludesfile = /Users/moraru/.gitignore_global
 	editor = nano
 	trustctime = false
 	autocrlf = input
+	hooksPath = /Users/moraru/git/hooks
 
 [diff]
 	tool = kdiff3
