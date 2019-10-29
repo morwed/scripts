@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxifierProfile version="101" 
+    platform="MacOSX" 
+    product_id="2" 
+    product_minver="200">
+    <Options>
+        <Resolve>
+            <AutoModeDetection enabled="false"/>
+            <ViaProxy enabled="true">
+                <TryLocalDnsFirst enabled="false"/>
+            </ViaProxy>
+            <ExclusionList ExcludeSimpleHostnames="false" 
+                ExcludeLocalhost="true" 
+                ExcludeSelfHostname="true" 
+                ExcludeLocalDomain="true">localhost;%ComputerName%;*.local;
+            </ExclusionList>
+        </Resolve>
+        <Encryption mode="disabled"/>
+        <HttpProxiesSupport enabled="false"/>
+        <HandleDirectConnections enabled="false"/>
+        <ConnectionLoopDetection enabled="true"/>
+        <ProcessServices enabled="false"/>
+        <ProcessOtherUsers enabled="false"/>
+    </Options>
+    <ProxyList>
+        <Proxy id="100" 
+            type="HTTPS">
+            <Address>se1-mwg-p03.schwarz</Address>
+            <Port>8081</Port>
+            <Options>0</Options>
+            <Authentication enabled="true">
+                <Username>moraru</Username>
+                <Password>OVERWRITE WITH YOUR PASSWORD</Password>
+            </Authentication>
+        </Proxy>
+        <Proxy id="101" 
+            type="HTTPS">
+            <Address>se1-mwg-p03.schwarz</Address>
+            <Port>9090</Port>
+            <Options>0</Options>
+            <Authentication enabled="true">
+                <Username>moraru</Username>
+                <Password>OVERWRITE WITH YOUR PASSWORD</Password>
+            </Authentication>
+        </Proxy>
+    </ProxyList>
+    <ChainList/>
+    <RuleList>
+        <Rule enabled="true">
+            <Name>Localhost</Name>
+            <Targets>localhost; 127.0.0.1; %ComputerName%; ::1</Targets>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>LocalDomains</Name>
+            <Targets>*.schwarz;*.lidl;*.kaufland;*lidl.net;*.secrz.*; ro-dfs03; ro-dfs04; ro-008dfs01; ro-005dfs01; ro-006dfs01; ro-008dfs01; ro-010dfs01; ro-ln01; ro-ln02; ro-ln; ro-005ln01;</Targets>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Browser</Name>
+            <Applications>Safari; WebProcess; "Safari Webpage Preview Fetcher"; SafariSyncClient; PubSubAgent; PluginProcess; "Google Chrome"; "Google Chrome Helper"; firefox; firefox-bin; plugin-container; XUL;*iexplore*; Rocket.Chat*; eclipse*</Applications>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Jamf</Name>
+            <Applications>"Self Service"; "Jamf Remote"</Applications>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Office Apps</Name>
+            <Applications>Microsoft*;OneDrive; "Cisco Jabber"; "Cisco AnyConnect Secure Mobility Client"; Teams; "Microsoft Excel"; "Microsoft OneNote"; "Microsoft Outlook"; "Microsoft PowerPoint"; "Microsoft Remote Desktop"; Teams; "Microsoft Word"; OneDrive; Pages</Applications>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Apple Services</Name>
+            <Targets>api.smoot.apple.com; appldnld.apple.com; appleid.apple.com; configuration.apple.com; configuration.apple.com.edgekey.net; gateway.icloud.com; gsa.apple.com; gspe1-ssl.ls.apple.com; gspe35-ssl.ls.apple.com; init-p01md.apple.com; init-p01st.push.apple.com; init.ess.apple.com; init.itunes.apple.com; itunes.apple.com.edgekey.net; lcdn-locator.apple.com; littlebuddy.apple.com; mesu.apple.com; www.apple.com; *.digicert.com; mdmenrollment.apple.com; iprofiles.apple.com; deviceservices-external.apple.com; *.push.apple.com; ppq.apple.com; *.cdn-apple.com; deimos3.apple.com; gg*.apple.com; gs.apple.com; itunes.apple.com; ig.apple.com; 10.208.64.115</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Development</Name>
+            <Targets>*bintray.com; *alpinelinux.org; *docker.io; *gradle.org; *gradle-dn.com</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Development aps</Name>
+            <Applications>java</Applications>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Default</Name>
+            <Action type="Proxy">100</Action>
+        </Rule>
+    </RuleList>
+</ProxifierProfile>
+  
