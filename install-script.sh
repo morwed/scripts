@@ -2,24 +2,26 @@
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew tap caskroom/versions
-brew tap caskroom/cask
+brew tap AdoptOpenJDK/openjdk
+brew tap homebrew/cask
 brew tap homebrew/cask-drivers
+brew tap homebrew/cask-fonts
+brew tap homebrew/cask-versions
 
 
-brew install bash-completion coreutils git nvm openshift-cli openssl docker-compose-completion maven-completion gradle-completion jhead docker-completion jq
+brew install bash-completion coreutils docker-completion docker-compose-completion git gradle-completion jhead jq nvm openssl
 
 mkdir ~/.nvm
 
-brew cask install docker flycut google-featured-photos iterm2 java8 jetbrains-toolbox logitech-options postman rocket-chat sourcetree spectacle visual-studio-code kdiff3 meld
+brew cask install adoptopenjdk8 docker flycut google-featured-photos iterm2 jetbrains-toolbox logitech-options meld postman rocket-chat sourcetree spectacle visual-studio-code
 
 #these come after we have installed java ;)
 brew install gradle groovysdk
 
 
 
-mkdir tools
-cd tools
+mkdir ~/tools
+cd ~/tools
 git clone https://github.com/morwed/scripts.git
 git clone https://github.com/braver/fonts.git programming-fonts
 curl https://fonts.google.com/download?family=IBM%20Plex%20Mono|Overpass%20Mono
@@ -28,9 +30,9 @@ curl https://fonts.google.com/download?family=IBM%20Plex%20Mono|Overpass%20Mono
 ln -s ~/tools/scripts/.gitconfig ~/.gitconfig
 ln -s ~/tools/scripts/.bashrc ~/.bashrc
 ln -s ~/.bashrc ~/.bash_profile
+mkdir ~/.ssh
 ln -s ~/tools/scripts/ssh_config ~/.ssh/config
-ln -s ~/git ~/tools/scripts/git
-sudo ln -svf /Users/moraru/tools/scripts/Company.ppx /Users/moraru/Library/Application\ Support/Proxifier/Profiles/
+sudo ln -svf ~/tools/scripts/Company.ppx ~/Library/Application\ Support/Proxifier/Profiles/
 
 
 #enable "allow from anywhere" option in System Preferences>Security&Privacy>"Allow apps downloaded from:"
