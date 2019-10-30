@@ -23,16 +23,16 @@ brew install gradle groovysdk
 mkdir ~/tools
 cd ~/tools
 git clone https://github.com/morwed/scripts.git
-git clone https://github.com/braver/fonts.git programming-fonts
-curl https://fonts.google.com/download?family=IBM%20Plex%20Mono|Overpass%20Mono
+curl "https://fonts.google.com/download?family=IBM%20Plex%20Mono|Overpass%20Mono" --output ibm-fonts.zip
 
 
-ln -s ~/tools/scripts/.gitconfig ~/.gitconfig
-ln -s ~/tools/scripts/.bashrc ~/.bashrc
-ln -s ~/.bashrc ~/.bash_profile
+ln -sv ~/tools/scripts/.gitconfig ~/.gitconfig
+ln -sv ~/tools/scripts/.bashrc ~/.bashrc
+ln -sv ~/.bashrc ~/.bash_profile
 mkdir ~/.ssh
-ln -s ~/tools/scripts/ssh_config ~/.ssh/config
+ln -sv ~/tools/scripts/ssh_config ~/.ssh/config
 sudo ln -svf ~/tools/scripts/Company.ppx ~/Library/Application\ Support/Proxifier/Profiles/
+ln -sv ~/tools/scripts/git-stuff/hooks/prepare-commit-msg ~/git/hooks/
 
 
 #enable "allow from anywhere" option in System Preferences>Security&Privacy>"Allow apps downloaded from:"
