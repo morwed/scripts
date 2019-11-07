@@ -1,0 +1,11 @@
+{
+  "auths" : {
+    "docker-mindshift.int.secrz.com:80" : {
+
+    }
+  },
+  "credsStore" : "osxkeychain",
+  "HttpHeaders" : {
+    "User-Agent" : "Docker-Client/19.03.4 (darwin)"
+  }
+}

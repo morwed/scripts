@@ -1,0 +1,7 @@
+{
+  "debug" : true,
+  "experimental" : true,
+  "insecure-registries" : [
+    "docker-mindshift.int.secrz.com:80"
+  ]
+}

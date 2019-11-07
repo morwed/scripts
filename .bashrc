@@ -69,8 +69,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 
-export nexusUser=eci.fes.deploy
-export nexusPassword=HappyUploader2600
+export nexusUser=<TO-BE-FILLED>
+export nexusPassword=<TO-BE_FILLED>
+export NEXUS_USER=$nexusUser
+export NEXUS_PASSWORD=$nexusPassword
+export DOCKER_MINDSHIFT_URL="docker-mindshift.int.secrz.com:80"
 alias g="./gradlew"
 
 

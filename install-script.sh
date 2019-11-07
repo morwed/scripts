@@ -29,6 +29,11 @@ curl "https://fonts.google.com/download?family=IBM%20Plex%20Mono|Overpass%20Mono
 ln -sv ~/tools/scripts/.gitconfig ~/.gitconfig
 ln -sv ~/tools/scripts/.bashrc ~/.bashrc
 ln -sv ~/.bashrc ~/.bash_profile
+
+mkdir ~/.docker
+ln -sv ~/tools/scripts/config.json ~/.docker/config.json
+ln -sv ~/tools/scripts/daemon.json ~/.docker/daemon.json
+
 mkdir ~/.ssh
 ln -sv ~/tools/scripts/ssh_config ~/.ssh/config
 sudo ln -svf ~/tools/scripts/Company.ppx ~/Library/Application\ Support/Proxifier/Profiles/
