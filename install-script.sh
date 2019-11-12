@@ -13,7 +13,7 @@ brew install bash-completion coreutils docker-completion docker-compose-completi
 
 mkdir ~/.nvm
 
-brew cask install adoptopenjdk8 docker flycut google-featured-photos iterm2 jetbrains-toolbox logitech-options meld postman rocket-chat sourcetree spectacle visual-studio-code
+brew cask install AdoptOpenJDK/openjdk/adoptopenjdk8 docker flycut google-featured-photos iterm2 jetbrains-toolbox logitech-options meld postman rocket-chat sourcetree spectacle visual-studio-code
 
 #these come after we have installed java ;)
 brew install gradle groovysdk
@@ -37,6 +37,7 @@ ln -sv ~/tools/scripts/daemon.json ~/.docker/daemon.json
 mkdir ~/.ssh
 ln -sv ~/tools/scripts/ssh_config ~/.ssh/config
 sudo ln -svf ~/tools/scripts/Company.ppx ~/Library/Application\ Support/Proxifier/Profiles/
+mkdir -p ~/git/hooks
 ln -sv ~/tools/scripts/git-stuff/hooks/prepare-commit-msg ~/git/hooks/
 
 
